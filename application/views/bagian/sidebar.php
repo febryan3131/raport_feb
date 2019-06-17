@@ -18,64 +18,83 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item  ">
+
+         <!--  <li class="nav-item  ">
            <a class="nav-link" href="<?php echo site_url('C_user');?>">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
-          </li>
+          </li> -->
+
           <li class="nav-item ">
             <a class="nav-link" href="<?php echo site_url('C_guru');?>">
-              <i class="material-icons">content_paste</i>
+              <i class="material-icons">person</i>
               <p>Guru</p>
             </a>
           </li>
+
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo site_url('C_siswa');?>">
-              <i class="material-icons">content_paste</i>
+            <a class="nav-link" href="<?php echo site_url('C_siswa');?>"> 
+              <i class="material-icons">group</i>
               <p>Siswa</p>
             </a>
           </li>
-
+<!-- ///////////////dropdown akademik//////////////// -->
            <li>
-              <div class="btn-group dropright">
-                  <a class="nav-link " id="cetak" data-toggle="dropdown">
-                 <div class="row">
-                       <div class="col-sm-2"><i class="material-icons">content_paste</i></div>
-                       <div class="col-sm-8"><p class=""> Cetak </p></div>
-                       <div class="col-sm-2"><i class="dropdown-toggle"></i></div>
-                </div>      
-            </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Mapel</a>
-                        <a class="dropdown-item" href="#">Kelas</a>
-                        <a class="dropdown-item" href="#">Nilai</a>                
-                      </div>
-            </div>
+             <div class="bd-example">   
+                         <div class="btn-group dropright show">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                       <a class="icon-next" href="#">
+                                         <i class="material-icons">school</i>
+                                       <p>Akademik</p>
+                                       </a>
+                                   </button>
+                                <div class="dropdown-menu show" x-placement="right-start" style="position: absolute; transform: translate3d(112px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                        <a class="dropdown-item" href="<?php echo site_url('akademik/C_mapel');?>">
+                                        <i class="material-icons">library_books</i>
+                                         Mapel</a>
+
+                                         <!-- kelas -->
+                                        <a class="dropdown-item" href="<?php echo site_url('akademik/C_kelas');?>">
+                                          <i class="material-icons">account_balance</i>
+                                          Kelas
+                                        </a>
+                                        <a class="dropdown-item" href="<?php echo site_url('akademik/C_nilai');?>">
+                                         <i class="material-icons">star</i>
+                                          Nilai
+                                        </a> 
+                               </div>
+                         </div>   
+              </div>                             
             </li>
-            <!-- Dropdown menu links -->
+  <!-- /////////////// akhir dropdown akademik//////////////// -->
 
-       
-         
+            <li>
+                 <div class="bd-example">
+                      <div class="btn-group dropright show">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <a class="icon-next" href="#">
+                                 <i class="material-icons">print</i>
+                                  <p>Cetak</p>
+                               </a>
+                             </button>
+                           <div class="dropdown-menu show" x-placement="right-start" style="position: absolute; transform: translate3d(112px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a class="dropdown-item" href="<?php echo site_url('cetak/C_laporan_guru');?>">
+                                 <i class="material-icons"> ballot</i>
+                                 Laporan Guru</a>
 
-   
+                                <a class="dropdown-item" href="<?php echo site_url('cetak/C_laporan_nilai');?>">
+                                 <i class="material-icons" > ballot</i>
+                                 Laporan Nilai</a>
 
-      <li>
-            <a class="nav-link " id="cetak" data-toggle="dropdown">
-                 <div class="row">
-                       <div class="col-sm-2"><i class="material-icons">content_paste</i></div>
-                       <div class="col-sm-8"><p class=""> Cetak </p></div>
-                       <div class="col-sm-2"><i class="dropdown-toggle"></i></div>
-                </div>      
-            </a>
+                                 <a class="dropdown-item" href="<?php echo site_url('cetak/C_laporan_kelas');?>">
+                                  <i class="material-icons" > ballot</i>
+                                  Laporan Kelas</a>
 
-           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton ">
-                  <a class="dropdown-item" href="<?php echo site_url('cetak/C_laporan_guru');?>">Laporan Guru</a>
-                 <a class="dropdown-item" href="<?php echo site_url('cetak/C_laporan_nilai');?>">Laporan Nilai</a>
-                  <a class="dropdown-item" href="<?php echo site_url('cetak/C_laporan_kelas');?>">Laporan Kelas</a>
-             </div>
-
-    </li>
+                           </div>
+                     </div>
+             </div>            
+         </li>
          <!--  <li class="nav-item ">
             <a class="nav-link" href="./typography.html">
               <i class="material-icons">library_books</i>
