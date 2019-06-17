@@ -20,6 +20,7 @@
                       </div>
 
 <p>ttttttttttttttttttttttttttttttttttttttttttttt</p>
+<p>rrrrrbarau</p>
                       <div class="col-md-12">
                                   <div class="form-group">
                                         <label class="bmd-label-floating">semester</label>
